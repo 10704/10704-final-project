@@ -1,13 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <title>Bootstrap demo</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Hello, world!</title>
   </head>
   <body>
-    <h1>復興高級中學</h1>
+    <h1>台北市立復興高級中學</h1>
+    </nav>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      <a class="navbar-brand" href="#">FHSH</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">行政大樓</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">圖書館</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">其他</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">復興大樓</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">敬業樓</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">篤行樓</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <h4 id="scrollspyHeading1">行政大樓</h4>
+      <div class="text-center">
+        <img src="assets/FhshDoor.jpg" class="rounded" alt="FhshDoor">
+        </div>
+      <p>主要位於大門正前方大樓，裡面包括校長室、校史室、總務處、會議室和人事室，相關報修或找校長簽名記得不要走錯喔!</p>
+      <h4 id="scrollspyHeading2">圖書館</h4>
+      <div class="text-center">
+        <img src="assets/fhsh-library.jpg" class="rounded" alt="fhsh-library">
+      </div>
+      <p>主要位於行政大樓左側樓梯上那棟，2樓主要分資訊組和圖書館，3樓主要是自習室，數位閱讀是，美力教室等等，十分適合做自主學習課程，如果想要晚自習也可以和圖書館登記到自習室，那裡有時有解題小老師在你需要的時候可以找他替你解答，電腦相關問題也可以去資訊組詢問老師!</p>
+      <h4 id="scrollspyHeading3">復興大樓</h4>
+      <img src="assets/Fhshfloor.jpg" class="rounded" alt="Fhshfloor">
+      <p>主要位於圖書館左側山上那棟大樓，1樓有學務處和各科老師辦公室，2樓是屬於高三學長姐的教室、輔導室和團輔室，3樓和4樓是屬於我們小高一充滿愉快氣氛的教室</p>
+      <h4 id="scrollspyHeading4">敬業樓</h4>
+      <p>...</p>
+      <h4 id="scrollspyHeading5">篤行樓</h4>
+      <p>...</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
